@@ -36,13 +36,6 @@
     "SEO": {
       "type": "string"
     },
-    "published_create": {
-      "type": "datetime",
-      "private": false
-    },
-    "published_update": {
-      "type": "datetime"
-    },
     "price": {
       "type": "decimal"
     },
@@ -50,6 +43,10 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "category_product": {
+      "via": "products",
+      "model": "category-product"
     }
   }
 }
