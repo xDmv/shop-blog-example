@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "post": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "publish_date": {
+      "type": "datetime"
+    },
+    "SEO": {
+      "type": "string"
+    }
+  }
+}
